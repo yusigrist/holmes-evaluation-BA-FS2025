@@ -105,6 +105,9 @@ def main(
                 hyperparameter["probe_type"] = config["probe_type"]
                 hyperparameter["encoding"] = model_precision
                 hyperparameter["num_labels"] = config["num_labels"]
+                hyperparameter["model_name"] = config["model_name"]
+                hyperparameter["sample_size"] = config["sample_size"]
+                hyperparameter["control_task_type"] = control_task_type.name
 
                 param_ele = {
                     "hyperparameter": hyperparameter,
